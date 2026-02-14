@@ -1,39 +1,18 @@
-# Site Settings
 title: Tamilarasu Ganeshamurthy
 description: "Researcher in High-Pressure Luminescence | Nanophosphors & WLEDs"
-url: "https://yourusername.github.io" # Replace 'yourusername' with your actual GitHub username
-baseurl: "" # Leave this empty
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Added a specific version for stability
+minimal_mistakes_skin: "contrast"
 
-# Theme Settings
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "contrast" # The sharp, professional physics look
-
-# Performance & Features
-paginate: 5 # Shows 5 blog posts per page
-words_per_minute: 200
-
-# Author Info (This appears in the sidebar)
+# Information from your CV
 author:
   name: "Tamilarasu Ganeshamurthy"
-  bio: "Specialist in RE-doped nanophosphors and high-pressure synthesis."
-  location: "Tamil Nadu, India"
+  [cite_start]bio: "Specialist in RE-doped nanophosphors and high-pressure synthesis." [cite: 1, 4, 37]
+  [cite_start]location: "Tamil Nadu, India" [cite: 3]
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:tamilarasu9486@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      [cite_start]url: "mailto:tamilarasu9486@gmail.com" [cite: 3]
 
-# Defaults for Posts and Pages
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
+include: ["_pages", "_posts"]
+sass:
+  style: :compressed
