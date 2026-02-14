@@ -1,1 +1,39 @@
-yaml remote_theme: "mmistakes/minimal-mistakes" minimal_mistakes_skin: "contrast" # A sharp, high-contrast look for physics
+# Site Settings
+title: Tamilarasu Ganeshamurthy
+description: "Researcher in High-Pressure Luminescence | Nanophosphors & WLEDs"
+url: "https://yourusername.github.io" # Replace 'yourusername' with your actual GitHub username
+baseurl: "" # Leave this empty
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "contrast" # The sharp, professional physics look
+
+# Performance & Features
+paginate: 5 # Shows 5 blog posts per page
+words_per_minute: 200
+
+# Author Info (This appears in the sidebar)
+author:
+  name: "Tamilarasu Ganeshamurthy"
+  bio: "Specialist in RE-doped nanophosphors and high-pressure synthesis."
+  location: "Tamil Nadu, India"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:tamilarasu9486@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+# Defaults for Posts and Pages
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
