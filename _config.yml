@@ -1,18 +1,28 @@
 title: Tamilarasu Ganeshamurthy
 description: "Researcher in High-Pressure Luminescence | Nanophosphors & WLEDs"
-remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Added a specific version for stability
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "contrast"
 
-# Information from your CV
+# Author Profile (Sidebar)
 author:
   name: "Tamilarasu Ganeshamurthy"
-  [cite_start]bio: "Specialist in RE-doped nanophosphors and high-pressure synthesis." [cite: 1, 4, 37]
-  [cite_start]location: "Tamil Nadu, India" [cite: 3]
+  bio: "Specializing in RE-doped nanophosphors and high-pressure synthesis."
+  location: "Tamil Nadu, India"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      [cite_start]url: "mailto:tamilarasu9486@gmail.com" [cite: 3]
+      url: "mailto:tamilarasu9486@gmail.com"
 
-include: ["_pages", "_posts"]
-sass:
-  style: :compressed
+# Plugin Settings
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Site Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
